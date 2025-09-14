@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import HeroSection from './components/HeroSection';
 import FooterMenu from './components/FooterMenu';
 
 function App() {
@@ -10,9 +11,16 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <div className="flex flex-col min-h-screen">
+        {/* 1. Heroセクション */}
+        <HeroSection />
+        {/* 2. ここに必要に応じてリンク集など追加 */}
+        <main className="flex-grow">
+          {/* 例：SNSアイコンやリンク集など */}
+        </main>
+        {/* 3. フッターメニュー */}
+        <FooterMenu />
+    </div>
       {/*
         <div>
             <a href="https://vite.dev" target="_blank">
@@ -35,7 +43,6 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
        */}
-       <FooterMenu />
     </>
   )
 }
