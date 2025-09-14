@@ -51,8 +51,8 @@ function CandleCanvas() {
       ref={canvasRef}
       width={400}
       height={250}
-      className="border rounded-lg mx-auto"
-    ></canvas>
+      className=""
+      ></canvas>
   );
 }
 
