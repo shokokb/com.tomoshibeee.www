@@ -2,8 +2,8 @@ import { FiPhone, FiMail, FiTwitter, FiInstagram, FiGithub, FiLinkedin } from "r
 
 function FooterMenu() {
   return (
-    <footer className="fixed bottom-0 left-0 bg-gray-100 p-6">
-      <div className="grid grid-cols-3 grid-rows-2 gap-4 max-w-md mx-auto">
+    <footer className="fixed　w-full bottom-0 left-0 bg-gray-100 p-6">
+      <div className="grid grid-cols-3 grid-rows-2 gap-4 mx-auto">
         <a href="tel:+819012345678" className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow hover:bg-blue-100">
           <FiPhone className="text-2xl mb-2 text-blue-600" />
           Call
