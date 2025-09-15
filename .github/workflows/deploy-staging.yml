@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd react-app
+          cd tomoshibeee-www
           npm install
 
       - name: Build React app
