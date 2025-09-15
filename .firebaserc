@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "com-tomoshibeee"
-  }
+  },
+  "targets": {
+    "com-tomoshibeee": {
+      "hosting": {
+        "staging": [
+          "com-tomoshibeee"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
