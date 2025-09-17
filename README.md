@@ -66,7 +66,51 @@ The website is deployed at:
 - tomoshibeee.com
 - www.tomoshibeee.com
 
-Deployment is handled via Netlify or GitHub Pages (to be finalized).
+Deployment is handled via Firebase (to be finalized).
+
+## 🌏 Deployment
+
+The website is deployed at:
+
+- **Production**: tomoshibeee.com / www.tomoshibeee.com
+- **Staging / Preview Channel**: Temporary URL generated via Firebase Hosting
+
+### 🔹 Firebase Production Deployment
+
+1. Build the site:
+
+```bash
+npm run build
+npm run export   # if using Next.js with static export
+Deploy to production:
+```
+
+2. Deploy the production site
+
+```bash
+firebase deploy --only hosting:production
+```
+
+### 🔹 Firebase Staging / Preview Deployment
+
+Staging deployment is handle by github workflow automatically.
+
+1. Build the site:
+
+```bash
+npm run build
+npm run export
+Deploy to staging / preview channel:
+```
+
+2. Deploy the staging site
+
+```bash
+firebase hosting:channel:deploy staging
+This generates a temporary preview URL.
+```
+
+Staging deployment does not affect production.
 
 # 🔗 CodePen Examples
 
